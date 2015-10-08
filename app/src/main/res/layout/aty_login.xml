@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/phone"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etPhoneNum"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnGetCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/getcode"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/code"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etCode"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:inputType="textPassword"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/publish_btn"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="@string/btn_login"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/app_introduction"
+            android:textColor="@color/gray_font" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/develop_info"
+            android:textColor="@color/gray_font" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_info"
+            android:onClick="mailToTao"
+            android:padding="10dp"
+            android:text="@string/mail_to_me"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

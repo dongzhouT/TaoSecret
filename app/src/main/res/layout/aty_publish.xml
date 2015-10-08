@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="clip_vertical"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_publish"
+        style="@android:style/TextAppearance.Holo.Widget.EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:gravity="left"
+        android:hint="@string/say_what_you_want"
+        android:padding="5dp"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_publish"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/publish_btn"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/publish"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menuShowAtyPublish"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="always"
+        android:title="publish" />
+
+    <item
+        android:id="@+id/menu_my_contacts"
+        android:title="@string/my_contacts" />
+    <item
+        android:id="@+id/menu_timeline_change_password"
+        android:title="@string/change_password" />
+    <item
+        android:id="@+id/menu_timeline_quit"
+        android:title="@string/quit" />
+</menu>
